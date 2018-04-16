@@ -9,7 +9,7 @@ package iotpackage;
  *
  * @author davi
  */
-public class Discover extends Thread {
-    
+public interface OnACValueChange extends OnDeviceStateChange{
+    abstract public void temperatureChanged(int newValue);
     
 }
